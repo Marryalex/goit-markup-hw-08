@@ -1,0 +1,122 @@
+.benefits-item {
+    // width: 100%;
+}
+
+.benefits-item-box {
+display: flex;
+align-items: center;
+justify-content: center;
+// width: 100%;
+height: 120px;
+background-color: #f5f4fa;
+border-radius: 4px;
+margin-bottom: 30px;
+}
+
+.benefits-item-icon {
+width: 70px;
+height: 70px;
+}
+
+.benefits-title {
+margin-bottom: 10px;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+font-weight: 700;
+text-align: center;
+color: var(--title-text-color);
+}
+
+.description {
+        line-height: 1.71;
+}
+
+@media screen and (min-width: 768px) {
+    .benefits-list {
+        display: flex;
+        flex-wrap: wrap;
+        
+        }
+    .benefits-item {
+            width: calc((100% - 30px) / 2);
+            margin-right: 30px;
+            margin-bottom: 25px;
+            
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+            
+            &:nth-last-child(-n + 2) {
+                margin-bottom: 0px;
+            }
+}
+
+        .benefits-item-box{
+            width: 100%;
+        }
+
+        .benefits-title {
+            text-align: left;
+        }
+
+    }
+@media screen and (min-width: 1200px){
+    .benefits-list {
+        flex-wrap: nowrap;
+        }
+
+        .benefits-item {
+            width: 270px;
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+        .benefits-item-box {
+            width: 100%;
+        }
+}
+// .benefits-list {
+//     display: flex;
+// }
+
+// .benefits-item {
+//     width: 270px;
+
+//     &:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
+
+
+// .benefits-item-box {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 270px;
+//     height: 120px;
+//     background-color: #f5f4fa;
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+// }
+
+// .benefits-item-icon {
+//     width: 70px;
+//     height: 70px;
+// }
+
+// .benefits-title {
+//     margin-bottom: 10px;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//     font-weight: 700;
+//     color: var(--title-text-color);
+// }
+
+// .description {
+//     line-height: 1.71;
+// }
